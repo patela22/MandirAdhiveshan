@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="Pictures/logo.jpg" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to BAPS</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header header__image">
+      <nav class="nav">
+        <img
+          src="Pictures/baps_logo.svg"
+          alt="BAPS logo"
+          class="nav__logo"
+          id="logo"
+          designer="BAPS"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Background</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Gurus</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Location</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--4">Schedule</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>Welcome to BAPS</h1>
+        <h4>Ansh Patel Adhiveshan Coding Challenge Project</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+      </div>
+    </header>
+
+    <section class="section section__image" id="section--1">
+      <div class="sliding">
+      <div class="section__title">
+        <h2 class="section__description">Background</h2>
+        <h3 class="section__header">
+          What is BAPS?
+        </h3>
+      </div>
+
+      <div class="features">
+          <p>
+            Bochasanwasi Shri Akshar Purushottam Swaminarayan Sanstha (BAPS) is a socio-spiritual Hindu organization with its roots in the Vedas. It was revealed by Bhagwan Swaminarayan (1781-1830) in the late 18th century and established in 1907 by Shastriji Maharaj (1865-1951). Founded on the pillars of practical spirituality, the BAPS reaches out far and wide to address the spiritual, moral and social challenges and issues we face in our world. Its strength lies in the purity of its nature and purpose. BAPS strives to care for the world by caring for societies, families and individuals. Its universal work through a worldwide network of over 3,850 centers has received many national and international awards and affiliation with the United Nations. Today, a million or more Swaminarayan followers begin their day with puja and meditation, lead upright, honest lives and donate regular hours in serving others. No Alcohol, No Addictions, No Adultery, No Meat, No Impurity of body and mind are their five lifetime vows. Such pure morality and spirituality forms the foundation of the humanitarian services performed by BAPS.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <div class="gradient--1"/>
+    
+
+    <section  id="section--2">
+    <div class="section">
+      <div class="section__title">
+        <h2 class="section__description">Gurus</h2>
+        <h3 class="section__header">
+          Let's take a look into our Gurus and what they did in our history
+        </h3>
+      </div>
+
+      <div class="slider curved">
+        <div class="slide">
+          <img src="Pictures/allGuru.png" alt="Photo 1" />
+        </div>
+
+        <div class="slide">
+            <img src="Pictures/bhagwanSwaminarayan.png" alt="Photo 2" />
+          </div>
+          <div class="slide">
+            <img src="Pictures/gunatitanandswami01.png" alt="Photo 3" />
+          </div>
+          <div class="slide">
+            <img src="Pictures/03-pujamurti-bhagatji-maharaj.png" alt="Photo 4" />
+          </div>
+          <div class="slide">
+            <img src="Pictures/04-pujamurti-shashtriji-maharaj.png" alt="Photo 5" />
+          </div>
+          <div class="slide">
+            <img src="Pictures/05-pujamurti-yogiji-maharaj.png" alt="Photo 6" />
+          </div>
+          <div class="slide">
+            <img src="Pictures/06-pujamurti-pramukh-swami.png" alt="Photo 7" />
+          </div>
+          <div class="slide">
+            <img src="Pictures/07-pujamurti-mahant-swami.png" alt="Photo 8" />
+          </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </div>
+    </section>
+    
+    
+    <div class="gradient--2"/>
+
+
+    <section id="section--3">
+      <div  class="section">
+      <div class="section__title">
+        <h2 class="section__description">Location</h2>
+        <h3 class="section__header">
+          Find out what center is closest to you!
+        </h3>
+      </div>
+     <div id="map"></div> 
+    </div>
+    </section>
+
+<div class="gradient--3"/>
+
+    <section class="section" id="section--4">
+      <div class="section__title--1">
+        <h2 class="section__description">Schedule</h2>
+        <h3 class="section__header">
+          Figure out what to do when you go to mandir!
+        </h3>
+      </div>        
+        <h2 class="left">Sacred shrines And Murti Darshan <br>
+         <div id="darshan1">9:00 am - 10:15 am<br></div>
+         <div id="darshan2">11:15 am - 12:00 pm<br></div>
+         <div id="darshan3">4:00 pm - 5:50 pm<br><br></div>
+          Arti<br>
+          <div id="Shangar">Shangar: 7:30 am<br></div>
+          <div id="Rajbhog">Rajbhog: 11:15 am<br></div>
+          <div id="Sandhya">Sandhya: 7:00 pm<br></div>
+          <div id="Shayan">Shayan: 8:30 pm<br><br></div>
+          Nilkanth Varni Abhishek<br>
+          <div id="label1">Mon to Sat<br></div>
+          <div id="abhishek1">9:00 am – 10:15 am<br></div>
+          <div id="abhishek2">11:30 am - 12:00 pm<br></div>
+          <div id="abhishek3">4:00 pm – 5:50 pm<br><br></div>
+          <div id="label2">Sun<br></div>
+          <div id="abhishek4">9:00 am – 10:15 am<br></div>
+          <div id="abhishek5">11:30 am – 12:30 pm<br></div>
+          <div id="abhishek6">3:00 pm – 5:45 pm</h2></div>
+      <h2>
+      <div class="right" id="clock"></div></h2>
+    </section>
+
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
